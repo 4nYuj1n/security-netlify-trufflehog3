@@ -15,4 +15,4 @@ jobs:
       - name: TruffleHog Enterprise scan
         uses: trufflesecurity/TruffleHog-Enterprise-Github-Action@main
         with:
-            args: --json ${{ github.event.repository.default_branch }} BASE
+            args: --json --debug ${{ github.event.repository.default_branch }} BASE
